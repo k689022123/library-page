@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>北投図書館</title>
+    <link rel="stylesheet" href="assets/css/library_page_style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monofett&display=swap"
+      rel="stylesheet"
+    />
+    <script src="jquery.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar_logo">
+        <li>
+          <a href="http://127.0.0.1:5500/index.html"
+            ><img src="assets/images/home-icon-2.png" alt="home-logo"
+          /></a>
+        </li>
+      </ul>
+
+      <ul class="page_label">
+        <div class="label_div">
+          <a href=""
+            ><li
+              class="navbar_page_label-button"
+              onmouseover="mouseOverStation()"
+              onmouseout="mouseOutStation()"
+            ></li>
+          </a>
+          <p class="label_station">新北投駅</p>
+        </div>
+        <div class="label_div">
+          <a href=""
+            ><li
+              class="navbar_page_label-button"
+              onmouseover="mouseOverLibrary()"
+              onmouseout="mouseOutLibrary()"
+            ></li>
+          </a>
+          <p class="label_Library">北投図書館</p>
+        </div>
+        <div class="label_div">
+          <a href=""
+            ><li
+              class="navbar_page_label-button"
+              onmouseover="mouseOverSpaMuseum()"
+              onmouseout="mouseOutSpaMuseum()"
+            ></li>
+          </a>
+          <p class="label_SpaMuseum">北投温泉博物館</p>
+        </div>
+        <div class="label_div">
+          <a href=""
+            ><li
+              class="navbar_page_label-button"
+              onmouseover="mouseOverPlumBossom()"
+              onmouseout="mouseOutPlumBossom()"
+            ></li>
+          </a>
+          <p class="label_PlumBossom">梅庭</p>
+        </div>
+        <div class="label_div">
+          <a href=""
+            ><li
+              class="navbar_page_label-button"
+              onmouseover="mouseOverNationalPalaceMuseum()"
+              onmouseout="mouseOutNationalPalaceMuseum()"
+            ></li>
+          </a>
+          <p class="label_NationalPalaceMuseum">国立故宮博物館</p>
+        </div>
+        <div class="label_div">
+          <a href=""
+            ><li
+              class="navbar_page_label-button"
+              onmouseover="mouseOverKnowledgeGod()"
+              onmouseout="mouseOutKnowledgeGod()"
+            ></li>
+          </a>
+          <p class="label_KnowledgeGod">文昌宮</p>
+        </div>
+        <div class="label_div">
+          <a href=""
+            ><li
+              class="navbar_page_label-button"
+              onmouseover="mouseOverPocketMuseum()"
+              onmouseout="mouseOutPocketMuseum()"
+            ></li>
+          </a>
+          <p class="label_PocketMuseum">袖珍博物館</p>
+        </div>
+        <div class="label_div">
+          <a href=""
+            ><li
+              class="navbar_page_label-button"
+              onmouseover="mouseOverConfucius()"
+              onmouseout="mouseOutConfucius()"
+            ></li>
+          </a>
+          <p class="label_Confucius">孔子廟</p>
+        </div>
+        <div class="label_div">
+          <a href=""
+            ><li
+              class="navbar_page_label-button"
+              onmouseover="mouseOverChineseCupid()"
+              onmouseout="mouseOutChineseCupid()"
+            ></li>
+          </a>
+          <p class="label_ChineseCupid">霞海城隍廟</p>
+        </div>
+        <div class="label_div">
+          <a href=""
+            ><li
+              class="navbar_page_label-button"
+              onmouseover="mouseOver207Museum()"
+              onmouseout="mouseOut207Museum()"
+            ></li>
+          </a>
+          <p class="label_207Museum">207博物館</p>
+        </div>
+        <div class="label_div">
+          <a href=""
+            ><li
+              class="navbar_page_label-button"
+              onmouseover="mouseOverMazu()"
+              onmouseout="mouseOutMazu()"
+            ></li>
+          </a>
+          <p class="label_Mazu">天后宮</p>
+        </div>
+      </ul>
+
+      <ul class="navbar_list-button" onclick="navbarListButton()">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+    <aside class="aside">
+      <ul class="aside_text">
+        <li><a href="http://127.0.0.1:5500/index.html">ホームページ</a></li>
+        <li></li>
+        <li><a href="http://127.0.0.1:5500/list.html">List 目次</a></li>
+        <li></li>
+        <li><a href="">制作計画書について</a></li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <ul class="main_aside">
+        <li class="main_aside_note">
+          <img src="assets/images/library_image/note.png" alt="note" />
+          <div>
+            <p class="note_title">北投図書館</p>
+            <p class="note_date">日付：　2021/10/20</p>
+            <p class="note_annotation_title">スタンプ注釈：</p>
+            <p class="note_annotation_word">
+              　スタンプの映像によって、斜面の屋上のデザインが見られる。
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="main_stamp">
+        <input type="radio" id="stamp_control-1" name="control" checked />
+        <input type="radio" id="stamp_control-2" name="control" />
+
+        <img
+          class="slide_stamp"
+          src="assets/images/library_image/library_stamp/library-stamp-01.jpg"
+          alt="library-stamp-01"
+        />
+        <img
+          class="slide_stamp"
+          src="assets/images/library_image/library_stamp/library-stamp-02.jpg"
+          alt="library-stamp-02"
+        />
+
+        <div class="stamp_controls-visible">
+          <label for="stamp_control-1"></label>
+          <label for="stamp_control-2"></label>
+        </div>
+      </ul>
+
+      <ul class="main_word">
+        <p class="main_word_title">台湾に初めてグリーン建築の図書館</p>
+        <p class="main_word_text">
+          　一般の図書館は学校の近くにあるが、北投図書館は北投公園内にある。自然と隣になる北投図書館の周りに様々な植物がある。それに、2012年にアメリカのウエブサイトで世界中一番美しい図書館の一つに選ばれた。夏に図書館の二階の戸外域で、公園の豊かな樹林と蓮が満開する池が楽しめる。勉強して疲れたら、窓口から涼しい風やみどりを通して、元気も取り戻すし、気持ちを落ち着けられる。ここで勉強するのは本当に幸せだ。<br />　周りのいい環境だけではなく、グリーン建築として図書館の屋上に太陽電池パネルがあって、斜めにして屋上は雨水を回収して、灌漑用水とトイレ用水に再利用できる。環境への配慮する設計は本当に素晴らしいものなのだ。
+        </p>
+      </ul>
+
+      <ul class="main_picture">
+        <img
+          src="assets/images/library_image/library_picture/library-picture-01.JPG"
+          alt="library-picture-01"
+        />
+        <img
+          src="assets/images/library_image/library_picture/library-picture-02.JPG"
+          alt="library-picture-02"
+        />
+        <img
+          src="assets/images/library_image/library_picture/library-picture-03.JPG"
+          alt="library-picture-03"
+        />
+      </ul>
+    </main>
+
+    <footer>
+      <div>© 2022　110年度　淡江大学日本語文学系卒業制作</div>
+    </footer>
+
+    <script src="assets/javascript/index_javascript.js"></script>
+    <script src="assets/javascript/library_page_javascript.js"></script>
+    <script></script>
+  </body>
+</html>
